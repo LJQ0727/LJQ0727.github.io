@@ -54,12 +54,15 @@ function checkClicked() {
         alert('Incorrect number format');
         return;
     }
+    // When the player wins
     if (checkNum == randomNumber){
-        // Correct number
         messageBox.innerHTML = 'You are right!';
         isGameFinished = true;
         document.querySelector('.number').innerHTML = randomNumber;   // reveal result
         document.querySelector('.again').focus();
+
+        // Change background to green
+        document.querySelector('body').style.backgroundColor = '#60b347';
         
         // Reset high score
         if (maxRange - count > highScore) {
@@ -87,4 +90,5 @@ function againClicked() {
     // Set focus to input field
     document.querySelector('.guess').focus();
     document.querySelector('.message').innerHTML = 'Start guessing...';
+    document.querySelector('body').style.backgroundColor = 'rgb(55, 155, 212)';
 }
