@@ -1,3 +1,6 @@
+// This small webgame project is a pratice of Jonas Schmedtmann's JS course
+// @https://github.com/jonasschmedtmann?tab=repositories
+
 'use strict'
 
 let randomNumber;
